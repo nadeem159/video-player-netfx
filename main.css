@@ -1,0 +1,81 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(33, 39, 39);
+    overflow: hidden;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+}
+
+.video-container .control {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    padding: 4vmin;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(31, 29, 29, 0.5);
+}
+
+.video-container .control button {
+    box-shadow: none;
+    background: none;
+    outline: none;
+    border: none;
+    height: 8vh;
+    width: 8vw;
+    /* border: white solid; */
+}
+
+.video-container .control button svg {
+    fill: hsl(0, 0%, 100%);
+    stroke: rgb(255, 255, 255);
+    stroke: currentColor;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    width: 100%;
+    height: 100%;
+}
+
+.video-container .control .title {
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.video-container .control .title .series {
+    color: #fefefe;
+    font-weight: bold;
+    font-size: 1em;
+    ;
+}
+
+.video-container .control .title .episode {
+    color: #a1a1a1;
+    font-size: 0.75em;
+    padding-left: 1vw;
+}
+
+.help svg,
+.episodes svg,
+.full-screen svg {
+    fill: none;
+}
